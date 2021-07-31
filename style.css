@@ -84,7 +84,7 @@ h1, h2{
 }
 
 .cat {
-    background-color: springgreen;
-    background-image: url("/photos/catmole2.JPG");
+    
+    background-image: url("./photos/catmole2.JPG");
     background-size: cover;
 }
