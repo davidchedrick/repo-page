@@ -57,6 +57,34 @@ li a:hover{
     background-color: #f0453f;
     border-radius: 360%;
   }
-h1{
-      text-align: center;
+h1, h2{
+    float: left;
+    margin: 10px;
+    text-align: center;
   }
+
+/*game*/
+#stats{
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 606px;
+    height: 606px;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: solid 1px rgb(223, 19, 223);
+}
+
+.cat {
+    background-color: springgreen;
+    background-image: url("/photos/catmole2.JPG");
+    background-size: cover;
+}
