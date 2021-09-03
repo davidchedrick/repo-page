@@ -1,6 +1,6 @@
 body{
-    color: rgb(7, 204, 230);
-    background-color: #00010f;
+    color: rgba(18, 1, 252, 0.822);
+    background: linear-gradient( rgb(243, 113, 185),rgb(245, 16, 157), rgb(201, 12, 122), rgb(100, 8, 59), black);
 } 
  #page-container {
     position: relative;
@@ -39,7 +39,7 @@ nav{
     overflow: hidden;
    
 }
-li{
+.navBTN{
     float: left;
     border: solid;
     border-style: groove;

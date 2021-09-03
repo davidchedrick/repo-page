@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Webpage of David Chedrick">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Chedrick">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="list.css">
+        <title>My Website</title>
+    </head>
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+
+                <!-- Navagation Area-->
+                <nav>
+                    <img id="tywater" src="./photos/tywater.png" alt text="cat water">
+                    <h1 id="title">Hello Cat World!!!</h1>
+                    <br>
+                    <ul id="navlist">
+                        <li class = 'navBTN'><a  href="index.html">Home</a></li>
+                        <li class = 'navBTN'><a href="catpet.html">Game</a></li>   
+                        <li class = 'navBTN'><a class="active" href="petlist.html"> List</a></li>         
+                    </ul>
+                </nav> 
+
+                <!-- Main Body Area--> 
+                <main>
+                    <div id="main-content">
+                        <h1>Task Lister Lite™️</h1>
+                    
+                        <form id="create-task-form" action="" method="POST">
+                          <label for="new-task-description">Task Description:</label>
+                          <input type="text" id="taskName" name="new-task-description" placeholder="description">
+                          
+                          <select>
+                            <option value="default">Priority</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                          </select>
+                          <input type="submit" value="Create New Task">
+                        </form>
+                    
+                        <div id="list">
+                          <h2>My List</h2>
+                          <ul id="tasks">
+                           
+                          </ul>
+                        </div>
+                    
+                        
+                      </div>    
+                </main>
+
+            <!-- Footer Area-->      
+            </div>   
+                <footer id="footer">
+                    <h6>cat</h6>
+                </footer>
+        </div>
+        <script src="list.js"></script>
+    </body>
+</html>
