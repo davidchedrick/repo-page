@@ -1,6 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     color: rgba(18, 1, 252, 0.822);
-    background: linear-gradient( rgb(243, 113, 185),rgb(245, 16, 157), rgb(201, 12, 122), rgb(100, 8, 59), black);
+    background: linear-gradient(160deg, rgb(243, 113, 185),rgb(245, 16, 157), rgb(201, 12, 122), rgb(100, 8, 59), black);
 } 
  #page-container {
     position: relative;
@@ -25,9 +31,11 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
-    background-color: #F41588;
+   /* background-color: #F41588;*/
     margin: 1em;
     padding: 0;
+    linear-gradient( rgb(243, 113, 185),rgb(245, 16, 157), rgb(201, 12, 122), rgb(100, 8, 59), black);
+    
     
 }
 #navlist{
@@ -103,7 +111,7 @@ h1, h2{
 }
 
 /*Footer*/
-    
+  /*  
 #footer{
     background-color: #F41588;
     position: absolute;
@@ -111,4 +119,4 @@ h1, h2{
     width: 100%;
     height: 2.5rem; 
    
-}   
+}   */

@@ -9,17 +9,48 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   function listItems(items){
+   
+
+    const todoDiv = document.createElement('div');
+    todoDiv.classList.add('todo');
+
     let li = document.createElement('li');
-    let btn = document.createElement('button');
-    btn.addEventListener('click', deleteItem);
-    btn.textContent = 'X';
     li.textContent = ` ${items} `;
-    li.appendChild(btn);
-    document.querySelector('#tasks').appendChild(li);
+    li.classList.add('todo-item')
+    todoDiv.appendChild(li);
+
+    let check = document.createElement('button');
+    check.innerHTML = '<i class="fas fa-check"></i>'
+    check.classList = 'check'
+   
+    todoDiv.appendChild(check);
+ check.addEventListener('click', checkOff);
+    let btn = document.createElement('button');
+    btn.innerHTML = '<i class="fas fa-trash"></i>';
+    btn.classList = 'trash'
+   
+    todoDiv.appendChild(btn)
+ btn.addEventListener('click', deleteItem);
+
+     
+    document.querySelector('#tasks').appendChild(todoDiv);
   }
   
   function deleteItem(e){
-    e.target.parentNode.remove();
+    const item = e.target
+   if(item.classList[0] === 'trash'){
+    const todoDiv = item.parentElement
+    todoDiv.remove(e)
+   }
+    
   }
+
+  function checkOff(e){
+    const item = e.target
+    if(item.classList[0] === 'check'){
+      const todoDiv = item.parentElement
+    todoDiv.classList.toggle('completed');
+  }
+}
   
   
